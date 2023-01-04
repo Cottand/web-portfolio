@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c0ddf0d3.css",
+    "main.js": "/static/js/main.250b1b7e.js",
+    "static/js/787.e8a52378.chunk.js": "/static/js/787.e8a52378.chunk.js",
+    "static/media/Confis.md": "/static/media/Confis.8784472096a8c4f16a90.md",
+    "static/media/Ivann.md": "/static/media/Ivann.d1f451ef6c47cd1a3fef.md",
+    "static/media/keep213.md": "/static/media/keep213.8335aec3d90099558406.md",
+    "static/media/Wacc.md": "/static/media/Wacc.2d385c28f533208f449f.md",
+    "static/media/DJStreamr.md": "/static/media/DJStreamr.95828198f4af4af56fc2.md",
+    "index.html": "/index.html",
+    "static/media/Paxos.md": "/static/media/Paxos.d9a279da560f39953981.md",
+    "static/media/ichack19.md": "/static/media/ichack19.470c8fce40ece024259c.md",
+    "static/media/website.md": "/static/media/website.826d2ae892af933e36bd.md",
+    "static/media/Checkm8.md": "/static/media/Checkm8.432de23be3e078422212.md",
+    "static/media/Pintos.md": "/static/media/Pintos.77c1a0b437dbeddaab37.md",
+    "main.c0ddf0d3.css.map": "/static/css/main.c0ddf0d3.css.map",
+    "main.250b1b7e.js.map": "/static/js/main.250b1b7e.js.map",
+    "787.e8a52378.chunk.js.map": "/static/js/787.e8a52378.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0ddf0d3.css",
+    "static/js/main.250b1b7e.js"
+  ]
+}
