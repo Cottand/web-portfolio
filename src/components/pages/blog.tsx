@@ -7,28 +7,29 @@ import markdownBlogEntries from "../const/markdownBlogEntries";
 
 export const BlogEntriesList: FC = () =>
     <List component={"nav"}>
+        <MarkdownBlogEntry entryName="vpnLessHomelab"/>
         <Entry type={"talk"}
                title={"How Monzo uses AWS Nitro Enclaves to secure its sensitive workloads"}
                href={"https://www.youtube.com/watch?v=xxDy1cFAvHA"}
                date={"18/06/2025"}
                key={"talkMonzoNitroEnclaves"}
         />
-        <MarkdownBlogEntry entryName="ociPublicLoadBalancer" />
-        <MarkdownBlogEntry entryName="FromMicroservicesToMonolith" />
-        <MarkdownBlogEntry entryName="MonorepoCiReproducibleBuilds" />
+        <MarkdownBlogEntry entryName="ociPublicLoadBalancer"/>
+        <MarkdownBlogEntry entryName="FromMicroservicesToMonolith"/>
+        <MarkdownBlogEntry entryName="MonorepoCiReproducibleBuilds"/>
         <Entry type={"external blog"}
                title={"Securing Monzo's software supply-chain better with reproducible builds for enclaves"}
                href={"https://monzo.com/blog/securing-our-software-supply-chain-better-with-reproducible-builds-for"}
                date={"20/07/2024"}
                key={"monzoReproducibleEnclaveBuilds"}
         />
-        <MarkdownBlogEntry entryName="CockroachDBDisasterRecovery" />
-        <MarkdownBlogEntry entryName="DockerNotReproducible" />
-        <MarkdownBlogEntry entryName="MultiArchNixDockerImages" />
-        <MarkdownBlogEntry entryName="NixShellFlakeScriptingForHashLanguages" />
-        <MarkdownBlogEntry entryName="ReproducibleCacheableGradleDocker" />
-        <MarkdownBlogEntry entryName="DNSServiceDiscoveryAdblockingNomad" />
-        <MarkdownBlogEntry entryName="nomadNixos" />
+        <MarkdownBlogEntry entryName="CockroachDBDisasterRecovery"/>
+        <MarkdownBlogEntry entryName="DockerNotReproducible"/>
+        <MarkdownBlogEntry entryName="MultiArchNixDockerImages"/>
+        <MarkdownBlogEntry entryName="NixShellFlakeScriptingForHashLanguages"/>
+        <MarkdownBlogEntry entryName="ReproducibleCacheableGradleDocker"/>
+        <MarkdownBlogEntry entryName="DNSServiceDiscoveryAdblockingNomad"/>
+        <MarkdownBlogEntry entryName="nomadNixos"/>
         <Entry type={"article"}
                title={"Detailed Case Study of Blockchain.com, a Fast-growing Cryptocurrency Company"}
                href={"https://github.com/Cottand/articles/raw/master/blockchainCaseStudy.pdf"}

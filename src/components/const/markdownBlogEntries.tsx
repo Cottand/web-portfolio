@@ -8,6 +8,7 @@ import monorepoCiReproducibleBuilds from "../../assets/markdown/blog/Reproducibl
 import cockroachDS from "../../assets/markdown/blog/CockroachDBDisasterRecovery.md"
 import micromodules from "../../assets/markdown/blog/FromMicroservicesToMonolith.md"
 import ociLbs from "../../assets/markdown/blog/ociPubLoadBalancer.md"
+import vpnless from "../../assets/markdown/blog/VPNlessHomelab.md"
 
 export const blogFromRef =
     (ref: string | undefined) => ref ? (markdownBlogEntries as Record<string, MarkdownEntryProps>)[ref] : undefined
@@ -15,6 +16,12 @@ export const blogFromRef =
 export type MarkdownEntryProps = { title: string, date: string, href: string, file: string }
 
 const markdownBlogEntries = {
+    vpnLessHomelab: {
+        title: "Ditching the VPN for securely accessing my homelab",
+        date: "28/07/2026",
+        href: "vpnLessHomelab",
+        file: vpnless,
+    },
     ociPublicLoadBalancer: {
         title: "Internet-to-internet load-balancing in OCI",
         date: "06/10/2024",
