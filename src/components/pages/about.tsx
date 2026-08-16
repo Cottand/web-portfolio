@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import {css} from "@emotion/react";
-import React, {FC} from "react";
+import React, {FC, useEffect, useState} from "react";
 import {
     Card,
     Grid,
@@ -16,6 +16,26 @@ import {Email, GitHub, LinkedIn, SaveAlt} from "@mui/icons-material";
 import {Link as RouterLink} from "react-router-dom";
 
 export const About: FC = () => {
+
+    const [temp, setTemp] = useState<number | null>(null);
+
+    const fetchTemp = async () => {
+        await fetch(`https://web.dcotta.com/s-web-portfolio/api/aquarium_temp`)
+            .then((response) => response.json())
+            .then((result) => {
+                if (result.error) {
+                    console.log("Error:", result.error);
+                    return false;
+                }
+                result = result as { tempC: number }
+                setTemp(result.tempC);
+            });
+    };
+
+    useEffect(() => {
+        fetchTemp()
+    }, [])
+
     return <div css={css`width: 100%`}>
         <Card elevation={0}
               css={css`
@@ -38,7 +58,8 @@ export const About: FC = () => {
                     building products customers love.
                     <br/>
                     <br/>
-                    I enjoy building things, music, gardening, and kite surfing.
+                    I enjoy building things, gardening, and kite surfing. I also keep a small aquarium
+                    ${temp ? `, and its current temperature is ${temp}°C` : ""}.
                 </Typography>
             </Card>
 
