@@ -58,8 +58,7 @@ export const About: FC = () => {
                     building products customers love.
                     <br/>
                     <br/>
-                    I enjoy building things, gardening, and kite surfing. I also keep a small aquarium
-                    ${temp ? `, and its current temperature is ${temp}°C` : ""}.
+                    I enjoy building things, gardening, and kite surfing. I also keep a small aquarium{temp ? `, and its current temperature is ${temp}°C` : ""}.
                 </Typography>
             </Card>
 
